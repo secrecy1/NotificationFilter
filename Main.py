@@ -94,8 +94,6 @@ weights = np.array([
 
 weights = weights / weights.sum()
 
-weights = weights / weights.sum()  # normalize to sum to 1
-
 # Compute weighted sum of similarities along anchors axis
 weighted_scores = np.dot(similarities, weights)  # shape: (num_notifications,)
 # --- Combine notifications + scores
